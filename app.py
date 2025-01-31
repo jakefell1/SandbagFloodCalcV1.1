@@ -130,12 +130,12 @@ def plot_wall_cross_section_with_bags(height, bag_height, w_base, w_top, bag_wid
     return fig
 
 def main():
-    st.title("Sandbag Wall Calculator + Auto-Populated Cross-Section")
+    st.title("Sandbag Wall Calculator")
 
     # ==========================
     # 1. USER INPUTS (Step 1)
     # ==========================
-    st.header("1. Basic Bag Calculation")
+    st.header("1. Number of Sandbags Calculation")
     shape = st.selectbox(
         "Select the shape of your wall:",
         ["Straight", "Arc", "Circle", "Semicircle"]
@@ -177,11 +177,7 @@ def main():
         st.write(f"**Total Bags Needed:** {total_bags}")
         st.write(f"**Number of Layers:** {layers}")
         st.markdown("""
-        **How to Lay the Bags**:
-        - Clear/level ground.
-        - First layer: place bags lengthwise, seams offset.
-        - Stagger subsequent layers.
-        - Consider a trapezoid or buttresses for large walls.
+       
         """)
 
         # --- Auto-Populate Cross-Section Values ---
